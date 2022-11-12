@@ -115,7 +115,7 @@ console.log('9. Filling boxes with a "while" loop');
 //This problem hit a weak spot of mine...I've never been good with these types of problems...but I gave it a shot and 
 //I know that I just have to keep trying and my mind will/can work these types of problems out. 
 
-
+//Try #1
 let index = 0;
 const max = 572;
 
@@ -124,23 +124,25 @@ while(index < 572) {
     index +=7;
 }
 
-/*
-let partsBoxed = 567;
-while(partsBoxed === 567) {
-    console.log('number of boxes used', partsBoxed);
-    partsBoxed /=7;
-}
-*/
-
-
-
+//Try #2
 let boxes = Math.trunc(572 / 7);
     console.log('number of boxes filled', boxes);
 
 
+//Try #3 - based off of the answer Farah walked me through
+let parts = 7;
+    boxes = 0;
+    
+    while(parts < 572) {
+         parts +=7;
+         boxes++;
+    }
+    console.log(parts, boxes);
+    
 
 
-//Below is what some of my classmates worked out and Farah walked me through it
+
+//Below is what some of my classmates worked out and Farah walked me through it...I went through the steps and worded each one.
 
 //part = total number of parts
 //boxes = 0 because no boxes have been packed yet
@@ -159,6 +161,6 @@ let boxes = Math.trunc(572 / 7);
     console.log('Parts unboxed', part, 'Boxes filled', boxes);
 
 
-
-
+  
    
+  
